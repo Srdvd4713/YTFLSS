@@ -1,0 +1,12 @@
+# name | git url | pinned commit | group
+# group: core = needed by the production pipeline · music = ACE-Step 1.5 score · full = reference/optional tools
+ffmpeg-skill|https://github.com/kajisho5/ffmpeg-skill|d9104bc|core
+impeccable|https://github.com/pbakaus/impeccable|9368675|core
+kokoro|https://github.com/hexgrad/kokoro|dfb907a|core
+ACE-Step-1.5|https://github.com/ace-step/ACE-Step-1.5|ca1e85f|music
+flux|https://github.com/black-forest-labs/flux|802fb47|full
+ACE-Step|https://github.com/ace-step/ACE-Step|1bee4c9|full
+local-deep-research|https://github.com/LearningCircuit/local-deep-research|5c571d8|full
+remotion|https://github.com/remotion-dev/remotion|a64a027|full
+penpot|https://github.com/penpot/penpot|74add05|full
+rea|https://github.com/morluto/rea|1173c0a|full

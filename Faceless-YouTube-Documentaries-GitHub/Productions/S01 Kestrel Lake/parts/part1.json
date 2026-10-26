@@ -1,0 +1,257 @@
+{
+  "series": "THE QUIET AT KESTREL LAKE",
+  "part": 1,
+  "title": "The Day The World Went Quiet",
+  "width": 1920,
+  "height": 1080,
+  "fps": 30,
+  "voices": {
+    "noah": { "voice": "am_michael", "speed": 0.98 },
+    "june": { "voice": "af_sky", "speed": 1.08 }
+  },
+  "shorts": [
+    { "from": "s01", "to": "s03", "hook": "THEY WERE WATCHING OUR WINDOW" },
+    { "from": "s07", "to": "s09", "hook": "WHAT DOES THE NOTE REALLY SAY?" },
+    { "from": "s20", "to": "s27", "hook": "WOULD YOU OPEN THE DOOR?" }
+  ],
+  "markup": "*word* = amber caption highlight. Pads are seconds of silence before/after VO. sfx 'at' is seconds from shot start (negative = from shot end).",
+  "shots": [
+    {
+      "id": "s01", "scene": "window_pov",
+      "params": { "time": "night", "tall": 2, "tallPhase": "still", "frost": true },
+      "camera": { "from": [1.0, 0, 0], "to": [1.18, 0.12, -0.04] },
+      "vo": [{ "who": "noah", "text": "On the first night of the Quiet, two of them stood at the edge of the trees. *Perfectly* still. Watching our window." }],
+      "pad": [1.2, 1.0],
+      "music": "drone",
+      "sfx": [{ "name": "wind", "at": 0, "loop": true, "gain": -20 }, { "name": "heartbeat", "at": 3.0, "gain": -14 }],
+      "hud": { "visible": false }
+    },
+    {
+      "id": "s02", "scene": "title",
+      "params": { "title": "THE QUIET AT KESTREL LAKE", "sub": "PART 1  ·  DAY 1" },
+      "vo": [], "min": 3.6, "pad": [0, 0],
+      "music": "sting",
+      "sfx": [{ "name": "boom", "at": 0.1, "gain": -8 }],
+      "hud": { "visible": false }, "transition": "fade"
+    },
+    {
+      "id": "s03", "scene": "ext_cabin",
+      "params": { "time": "day", "exhaust": true, "snowfall": 0.6 },
+      "camera": { "from": [1.12, -0.05, 0.02], "to": [1.0, 0, 0] },
+      "vo": [{ "who": "noah", "text": "My name is *Noah*. I'm fifteen. This is my grandpa's cabin on Kestrel Lake, about forty miles from anything with a name." }],
+      "pad": [0.5, 0.6], "music": "cabin",
+      "sfx": [{ "name": "wind", "at": 0, "loop": true, "gain": -24 }, { "name": "hum", "at": 0, "loop": true, "gain": -30 }],
+      "hud": { "visible": false }, "transition": "fade"
+    },
+    {
+      "id": "s04", "scene": "int_cabin",
+      "params": { "time": "day", "noah": { "x": 0.30, "pose": "stand", "eyes": "normal" }, "june": { "x": 0.62, "pose": "sit", "eyes": "normal" }, "biscuit": "sleep", "focus": "june" },
+      "camera": { "from": [1.25, 0.12, 0.05], "to": [1.1, 0.06, 0.04] },
+      "vo": [{ "who": "noah", "text": "That's my sister, *June*. She's eight. And that's *Biscuit*. He's a beagle, and he's twelve, which in dog years means he's allowed to sleep all day." }],
+      "pad": [0.3, 0.5], "music": "cabin",
+      "sfx": [{ "name": "hum", "at": 0, "loop": true, "gain": -26 }, { "name": "snore", "at": 5.5, "gain": -18 }],
+      "hud": { "visible": false }
+    },
+    {
+      "id": "s05", "scene": "int_cabin",
+      "params": { "time": "day", "noah": { "x": 0.30, "pose": "stand", "eyes": "side" }, "june": { "x": 0.62, "pose": "sit", "eyes": "normal" }, "biscuit": "sleep", "radio": true, "focus": "radio" },
+      "camera": { "from": [1.0, 0, 0], "to": [1.08, -0.04, 0] },
+      "vo": [{ "who": "noah", "text": "Three days ago, the blizzard hit. The power went out. The phones went dead. And the radio... just *hiss*." }],
+      "pad": [0.3, 0.8], "music": "cabin",
+      "sfx": [{ "name": "hum", "at": 0, "loop": true, "gain": -26 }, { "name": "static", "at": -2.6, "gain": -18 }]
+    },
+    {
+      "id": "s06", "scene": "shed",
+      "params": { "time": "day", "candle": false },
+      "camera": { "from": [1.0, 0, 0], "to": [1.15, 0.05, 0.02] },
+      "vo": [{ "who": "noah", "text": "Grandpa said not to worry. He dragged the old generator into the shed and got it running. That *hum* has been the only sound out here ever since." }],
+      "pad": [0.3, 0.7], "music": "cabin",
+      "sfx": [{ "name": "hum", "at": 0, "loop": true, "gain": -16 }],
+      "hud": { "visible": true, "day": "01", "fuel": 5, "tall": 0, "headache": 1, "air": "SAFE ✓", "clock": "07:40 AM" }
+    },
+    {
+      "id": "s07", "scene": "int_cabin",
+      "params": { "time": "day", "noah": { "x": 0.40, "pose": "stand", "eyes": "worried" }, "biscuit": "sleep", "noteOnTable": true, "focus": "table" },
+      "camera": { "from": [1.0, 0, 0], "to": [1.2, 0.08, 0.06] },
+      "vo": [{ "who": "noah", "text": "Then this morning, Grandpa was *gone*. His snowmobile was gone. And on the table, there was this." }],
+      "pad": [0.3, 0.5], "music": "tension",
+      "sfx": [{ "name": "hum", "at": 0, "loop": true, "gain": -26 }]
+    },
+    {
+      "id": "s08", "scene": "note",
+      "params": { "smudge": true, "bleed": true },
+      "camera": { "from": [1.0, 0, 0], "to": [1.1, 0.0, 0.03] },
+      "vo": [{ "who": "noah", "text": "Gone for help. Head is pounding. Something is in the air. Keep the windows... and that's where June spilled her cocoa. I'm pretty sure it says *shut*." }],
+      "pad": [0.4, 0.8], "music": "tension",
+      "sfx": [{ "name": "paper", "at": 0.1, "gain": -14 }, { "name": "hum", "at": 0, "loop": true, "gain": -30 }]
+    },
+    {
+      "id": "s09", "scene": "window_pov",
+      "params": { "time": "day", "tall": 0, "frost": true },
+      "camera": { "from": [1.05, 0, 0], "to": [1.2, 0, -0.03] },
+      "vo": [{ "who": "noah", "text": "Something is in the air. So whatever took the sound out of the world... is *outside*. Breathing the same air we are." }],
+      "pad": [0.3, 0.8], "music": "tension",
+      "sfx": [{ "name": "wind", "at": 0, "loop": true, "gain": -18 }]
+    },
+    {
+      "id": "s10", "scene": "int_cabin",
+      "params": { "time": "day", "noah": { "x": 0.45, "pose": "write", "eyes": "worried" }, "june": { "x": 0.7, "pose": "stand", "eyes": "normal" }, "biscuit": "sleep", "focus": "noah" },
+      "camera": { "from": [1.1, 0, 0.03], "to": [1.25, 0.02, 0.05] },
+      "vo": [{ "who": "noah", "text": "So I did what Grandpa would do. I made *rules*." }],
+      "pad": [0.2, 0.4], "music": "tension",
+      "sfx": [{ "name": "pencil", "at": 0.4, "gain": -16 }, { "name": "hum", "at": 0, "loop": true, "gain": -28 }]
+    },
+    {
+      "id": "s11", "scene": "rule_card",
+      "params": { "n": 1, "text": "KEEP THE HUM GOING." },
+      "vo": [{ "who": "noah", "text": "Rule one. Keep the *hum* going. The hum means we're okay." }],
+      "pad": [0.9, 0.8], "music": "rules",
+      "sfx": [{ "name": "flip", "at": 0.15, "gain": -8 }, { "name": "hum", "at": 0, "loop": true, "gain": -24 }]
+    },
+    {
+      "id": "s12", "scene": "rule_card",
+      "params": { "n": 2, "text": "KEEP EVERY WINDOW SHUT." },
+      "vo": [
+        { "who": "noah", "text": "Rule two. Keep every window *shut*." },
+        { "who": "june", "text": "But it's so stuffy in here." },
+        { "who": "noah", "text": "Rule two, June." }
+      ],
+      "pad": [0.9, 0.8], "music": "rules",
+      "sfx": [{ "name": "flip", "at": 0.15, "gain": -8 }]
+    },
+    {
+      "id": "s13", "scene": "rule_card",
+      "params": { "n": 3, "text": "NEVER GO PAST THE WOODPILE." },
+      "vo": [{ "who": "noah", "text": "Rule three. Never go past the *woodpile*. Whatever's out there, we don't go looking for it." }],
+      "pad": [0.9, 0.9], "music": "rules",
+      "sfx": [{ "name": "flip", "at": 0.15, "gain": -8 }]
+    },
+    {
+      "id": "s14", "scene": "int_cabin",
+      "params": { "time": "noon", "noah": { "x": 0.35, "pose": "hold_head", "eyes": "closed" }, "june": { "x": 0.62, "pose": "sit", "eyes": "sleepy" }, "biscuit": "sleep", "focus": "noah", "pain": true },
+      "camera": { "from": [1.15, -0.02, 0.04], "to": [1.3, -0.05, 0.06] },
+      "vo": [{ "who": "noah", "text": "By noon, my head was *pounding*. June's too. I figured it was the Quiet. Pressure, like before a storm." }],
+      "pad": [0.3, 0.6], "music": "tension",
+      "sfx": [{ "name": "hum", "at": 0, "loop": true, "gain": -22 }, { "name": "ring", "at": 0.5, "gain": -24 }],
+      "hud": { "visible": true, "day": "01", "fuel": 5, "tall": 0, "headache": 3, "air": "SAFE ✓", "clock": "12:05 PM" }
+    },
+    {
+      "id": "s15", "scene": "woodpile",
+      "params": { "time": "day", "exhaust": true },
+      "camera": { "from": [1.0, 0, 0], "to": [1.12, -0.06, 0] },
+      "vo": [{ "who": "noah", "text": "I went out for wood. And the weird thing is... out there, by the woodpile, the headache just... *faded*. Like the cold was squeezing it out." }],
+      "pad": [0.3, 0.8], "music": "cabin",
+      "sfx": [{ "name": "wind", "at": 0, "loop": true, "gain": -18 }, { "name": "crunch", "at": 0.3, "gain": -16 }, { "name": "crunch", "at": 1.1, "gain": -16 }, { "name": "hum", "at": 0, "loop": true, "gain": -34 }],
+      "hud": { "visible": true, "day": "01", "fuel": 5, "tall": 0, "headache": 1, "air": "SAFE ✓", "clock": "12:40 PM" }
+    },
+    {
+      "id": "s16", "scene": "int_cabin",
+      "params": { "time": "noon", "noah": { "x": 0.25, "pose": "carry_wood", "eyes": "worried" }, "june": { "x": 0.62, "pose": "sit", "eyes": "sleepy" }, "biscuit": "sleep", "focus": "noah" },
+      "camera": { "from": [1.05, 0, 0], "to": [1.15, -0.04, 0.02] },
+      "vo": [{ "who": "noah", "text": "Back inside, it came right back. That's how I knew. The Quiet was getting *stronger*." }],
+      "pad": [0.2, 0.7], "music": "tension",
+      "sfx": [{ "name": "door", "at": 0.0, "gain": -16 }, { "name": "hum", "at": 0, "loop": true, "gain": -22 }],
+      "hud": { "visible": true, "day": "01", "fuel": 5, "tall": 0, "headache": 4, "air": "SAFE ✓", "clock": "12:55 PM" }
+    },
+    {
+      "id": "s17", "scene": "alarm",
+      "params": { "state": "chirp" },
+      "camera": { "from": [1.0, 0, 0], "to": [1.12, 0, 0] },
+      "vo": [{ "who": "noah", "text": "That afternoon, something in the kitchen started *chirping*. Grandpa's old smoke alarm, screaming at nothing. There wasn't any smoke." }],
+      "pad": [1.4, 0.4], "music": "tension",
+      "sfx": [{ "name": "chirp", "at": 0.2, "gain": -12 }, { "name": "chirp", "at": 1.0, "gain": -12 }, { "name": "chirp", "at": 3.6, "gain": -14 }, { "name": "chirp", "at": 6.2, "gain": -14 }, { "name": "hum", "at": 0, "loop": true, "gain": -26 }],
+      "hud": { "visible": true, "day": "01", "fuel": 5, "tall": 0, "headache": 4, "air": "SAFE ✓", "clock": "03:20 PM" }
+    },
+    {
+      "id": "s18", "scene": "alarm",
+      "params": { "state": "batteries_out" },
+      "camera": { "from": [1.12, 0, 0], "to": [1.2, 0.03, 0.02] },
+      "vo": [{ "who": "noah", "text": "So I took the batteries out... and put them in the flashlight. We were going to need *light*." }],
+      "pad": [0.2, 1.0], "music": "tension",
+      "sfx": [{ "name": "click", "at": 0.4, "gain": -10 }, { "name": "click", "at": -1.6, "gain": -10 }, { "name": "hum", "at": 0, "loop": true, "gain": -26 }]
+    },
+    {
+      "id": "s19", "scene": "ext_cabin",
+      "params": { "time": "night", "exhaust": true, "snowfall": 0.9 },
+      "camera": { "from": [1.0, 0, 0], "to": [1.08, 0, 0.02] },
+      "vo": [{ "who": "noah", "text": "Then the sun went down." }],
+      "pad": [0.8, 1.2], "music": "dread",
+      "sfx": [{ "name": "wind", "at": 0, "loop": true, "gain": -16 }, { "name": "hum", "at": 0, "loop": true, "gain": -30 }],
+      "hud": { "visible": true, "day": "01", "fuel": 5, "tall": 0, "headache": 4, "air": "SAFE ✓", "clock": "09:14 PM" },
+      "transition": "fade"
+    },
+    {
+      "id": "s20", "scene": "int_cabin",
+      "params": { "time": "night", "noah": { "x": 0.28, "pose": "hold_flashlight", "eyes": "normal" }, "june": { "x": 0.66, "pose": "point", "eyes": "wide", "atWindow": true }, "biscuit": "sleep", "focus": "june" },
+      "camera": { "from": [1.0, 0, 0], "to": [1.15, 0.1, 0] },
+      "vo": [
+        { "who": "noah", "text": "June was the one who saw them first." },
+        { "who": "june", "text": "Noah. Someone's in the *trees*." }
+      ],
+      "pad": [0.3, 0.8], "music": "dread",
+      "sfx": [{ "name": "hum", "at": 0, "loop": true, "gain": -24 }, { "name": "wind", "at": 0, "loop": true, "gain": -26 }]
+    },
+    {
+      "id": "s21", "scene": "window_pov",
+      "params": { "time": "night", "tall": 2, "tallPhase": "reveal", "frost": true },
+      "camera": { "from": [1.0, 0, 0], "to": [1.35, 0.1, -0.05] },
+      "vo": [{ "who": "noah", "text": "Two of them. Taller than any person I know. Each with one white eye... that didn't *blink*." }],
+      "pad": [0.6, 1.0], "music": "dread",
+      "sfx": [{ "name": "riser", "at": 0, "gain": -16 }, { "name": "heartbeat", "at": 1.0, "gain": -12 }, { "name": "wind", "at": 0, "loop": true, "gain": -22 }],
+      "hud": { "visible": true, "day": "01", "fuel": 5, "tall": 2, "headache": 4, "air": "SAFE ✓", "clock": "09:16 PM" }
+    },
+    {
+      "id": "s22", "scene": "rule_card",
+      "params": { "n": 4, "text": "NEVER ANSWER THE TALL ONES." },
+      "vo": [{ "who": "noah", "text": "I wrote rule four with a shaking hand. Never answer the *Tall Ones*." }],
+      "pad": [0.9, 0.8], "music": "rules",
+      "sfx": [{ "name": "flip", "at": 0.15, "gain": -8 }]
+    },
+    {
+      "id": "s23", "scene": "window_pov",
+      "params": { "time": "night", "tall": 2, "tallPhase": "approach", "frost": true },
+      "camera": { "from": [1.2, 0.05, -0.03], "to": [1.45, 0.08, -0.06] },
+      "vo": [{ "who": "noah", "text": "They didn't move. They just watched. Then, together, they turned... and walked *toward* the cabin." }],
+      "pad": [0.3, 1.2], "music": "dread",
+      "sfx": [{ "name": "crunch", "at": -3.4, "gain": -14 }, { "name": "crunch", "at": -2.6, "gain": -13 }, { "name": "crunch", "at": -1.8, "gain": -12 }, { "name": "crunch", "at": -1.0, "gain": -11 }, { "name": "wind", "at": 0, "loop": true, "gain": -22 }]
+    },
+    {
+      "id": "s24", "scene": "door",
+      "params": { "knock": true, "shadows": 2 },
+      "camera": { "from": [1.0, 0, 0], "to": [1.1, 0, 0] },
+      "vo": [{ "who": "noah", "text": "Three knocks. And rule five came to me, right then." }],
+      "pad": [2.6, 0.4], "music": "silence",
+      "sfx": [{ "name": "knock", "at": 0.4, "gain": -4 }, { "name": "knock", "at": 1.0, "gain": -4 }, { "name": "knock", "at": 1.6, "gain": -4 }, { "name": "hum", "at": 0, "loop": true, "gain": -28 }]
+    },
+    {
+      "id": "s25", "scene": "rule_card",
+      "params": { "n": 5, "text": "NEVER OPEN THE DOOR.", "final": true },
+      "vo": [{ "who": "noah", "text": "Never. Open. The. *Door*." }],
+      "pad": [0.9, 1.2], "music": "rules",
+      "sfx": [{ "name": "flip", "at": 0.15, "gain": -6 }, { "name": "boom", "at": 0.2, "gain": -12 }]
+    },
+    {
+      "id": "s26", "scene": "door",
+      "params": { "knock": false, "shadows": 2, "dark": true },
+      "camera": { "from": [1.1, 0, 0], "to": [1.4, 0, 0.02] },
+      "vo": [{ "who": "noah", "text": "And then, from the other side of the door... something said my *name*." }],
+      "pad": [0.4, 0.5], "music": "silence",
+      "sfx": [{ "name": "hum", "at": 0, "loop": true, "gain": -28 }]
+    },
+    {
+      "id": "s27", "scene": "black",
+      "params": {},
+      "vo": [{ "who": "voice", "text": "Noah?" }],
+      "pad": [0.6, 1.4], "music": "silence",
+      "sfx": [{ "name": "boom", "at": -1.2, "gain": -6 }]
+    },
+    {
+      "id": "s28", "scene": "end_card",
+      "params": { "question": "WOULD YOU ANSWER?", "a": "YES", "b": "NO", "next": "PART 2 · THEY KNOW OUR NAMES", "clue": "Something in this episode is a clue. Did you catch it?" },
+      "vo": [], "min": 6.0, "pad": [0, 0],
+      "music": "sting",
+      "sfx": [{ "name": "boom", "at": 0.1, "gain": -10 }],
+      "hud": { "visible": false }, "transition": "fade"
+    }
+  ]
+}

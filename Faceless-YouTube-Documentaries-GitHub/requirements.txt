@@ -1,0 +1,6 @@
+# Core pipeline (voice.py, research pulls)
+kokoro-onnx
+numpy
+soundfile
+scipy
+yt-dlp

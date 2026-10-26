@@ -1,0 +1,27 @@
+# Cloned tools and models (recreated by install.ps1 / install.sh)
+tools/*
+!tools/tools.txt
+!tools/README.md
+
+# Environments and dependencies
+.venv/
+node_modules/
+__pycache__/
+*.pyc
+
+# Renders and generated media
+Productions/*/build/
+Productions/*/output/*.mp4
+Productions/*/output/thumbs/
+Productions/*/output/shorts/
+Productions/*/assets/music/
+*.wav
+*.mp4
+*.onnx
+*.bin
+*.safetensors
+
+# OS / editor
+.DS_Store
+Thumbs.db
+.vscode/
